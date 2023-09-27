@@ -38,6 +38,7 @@ try:
 except URLError as e:
   streamlit.error()
 
+streamlit.stop()
 streamlit.write('The user entered', fruit_choice)
 
 #import requests
