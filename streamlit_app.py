@@ -69,10 +69,10 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
+streamlit.stop()
+
 #This will not work correctly, but just go with it for now
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-
-streamlit.stop()
 
 streamlit.write('The user entered', fruit_choice)
 
